@@ -1,0 +1,28 @@
+form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 0.5em;
+    border: none;
+    outline: none;
+    font-size: 1em;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .result {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
