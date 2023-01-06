@@ -36,7 +36,7 @@ function levenshteinDistance(a, b) {
   }
 
   function search(query) {
-    fetch('json/data.json')
+    fetch('data.json')
       .then(function(response) {
         return response.json();
       })
