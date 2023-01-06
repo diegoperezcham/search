@@ -3,12 +3,14 @@
   <head>
     <title>Search Engine</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
   </head>
   <body>
-    <form>
-      <input type="text" id="search-input" placeholder="Search...">
-      <button type="submit">Search</button>
-    </form>
+    <!--<form>-->
+      <input type="text" id="search-input" oninput="trigger()" placeholder="Search...">
+      <!--<button type="submit">Search</button>-->
+    <!--</form>-->
     <div id="search-results"></div>
   </body>
   <script src="logic.js"></script></script>

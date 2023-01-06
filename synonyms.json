@@ -1,0 +1,862 @@
+[
+    {
+      "synonym": "saldo",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "tiempo aire",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "prepago",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "crédito",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "crédito",
+      "skuName": "tarjeta de crédito"
+    },
+    {
+      "synonym": "recarga",
+      "skuName": "recargs"
+    },
+    {
+      "synonym": "cinema",
+      "skuName": "cine"
+    },
+    {
+      "synonym": "red telcel",
+      "skuName": "telcel"
+    },
+    {
+      "synonym": "red unefon",
+      "skuName": "unefon"
+    },
+    {
+      "synonym": "fon",
+      "skuName": "celular"
+    },
+    {
+      "synonym": "teléfono móvil",
+      "skuName": "celular"
+    },
+    {
+      "synonym": "móvil",
+      "skuName": "celular"
+    },
+    {
+      "synonym": "teléfono",
+      "skuName": "celular"
+    },
+    {
+      "synonym": "cel",
+      "skuName": "celular"
+    },
+    {
+      "synonym": "movil",
+      "skuName": "celular"
+    },
+    {
+      "synonym": "perro caliente",
+      "skuName": "hot dog"
+    },
+    {
+      "synonym": "hotdog",
+      "skuName": "hot dog"
+    },
+    {
+      "synonym": "salchicha",
+      "skuName": "hot dog"
+    },
+    {
+      "synonym": "tarjeta de regalo",
+      "skuName": "giftcard"
+    },
+    {
+      "synonym": "Lunes - Viernes",
+      "skuName": "Lun - Vie"
+    },
+    {
+      "synonym": "Lunes",
+      "skuName": "Lun - Vie"
+    },
+    {
+      "synonym": "Viernes",
+      "skuName": "Lun - Vie"
+    },
+    {
+      "synonym": "Lunes - Domingo",
+      "skuName": "Lun - Dom"
+    },
+    {
+      "synonym": "Lunes",
+      "skuName": "Lun - Dom"
+    },
+    {
+      "synonym": "Domingo",
+      "skuName": "Lun - Dom"
+    },
+    {
+      "synonym": "cinepolis lunes",
+      "skuName": "Cinepolis Lun - Dom"
+    },
+    {
+      "synonym": "cinepolis jueves",
+      "skuName": "Cinepolis Lun - Dom"
+    },
+    {
+      "synonym": "confitería",
+      "skuName": "dulcería"
+    },
+    {
+      "synonym": "bombonería",
+      "skuName": "dulcería"
+    },
+    {
+      "synonym": "tickets",
+      "skuName": "boletos"
+    },
+    {
+      "synonym": "cupón",
+      "skuName": "boletos"
+    },
+    {
+      "synonym": "entrada",
+      "skuName": "boletos"
+    },
+    {
+      "synonym": "ilimitado",
+      "skuName": "sin límite"
+    },
+    {
+      "synonym": "transporte",
+      "skuName": "bus_tickets"
+    },
+    {
+      "synonym": "autobus",
+      "skuName": "bus_tickets"
+    },
+    {
+      "synonym": "autobús",
+      "skuName": "bus_tickets"
+    },
+    {
+      "synonym": "boleto autobús",
+      "skuName": "bus_tickets"
+    },
+    {
+      "synonym": "ticket autobús",
+      "skuName": "bus_tickets"
+    },
+    {
+      "synonym": "autobús ticket",
+      "skuName": "bus_tickets"
+    },
+    {
+      "synonym": "sala de cine",
+      "skuName": "cine"
+    },
+    {
+      "synonym": "membership",
+      "skuName": "membresía"
+    },
+    {
+      "synonym": "cartera",
+      "skuName": "wallet"
+    },
+    {
+      "synonym": "café",
+      "skuName": "starbucks"
+    },
+    {
+      "synonym": "cafe",
+      "skuName": "starbucks"
+    },
+    {
+      "synonym": "party",
+      "skuName": "fiesta"
+    },
+    {
+      "synonym": "gift",
+      "skuName": "regalos"
+    },
+    {
+      "synonym": "moto",
+      "skuName": "econduce"
+    },
+    {
+      "synonym": "motocicleta",
+      "skuName": "econduce"
+    },
+    {
+      "synonym": "play",
+      "skuName": "juego"
+    },
+    {
+      "synonym": "ags",
+      "skuName": "Aguascalientes"
+    },
+    {
+      "synonym": "bc",
+      "skuName": "Baja California"
+    },
+    {
+      "synonym": "bcs",
+      "skuName": "Baja California Sur"
+    },
+    {
+      "synonym": "camp",
+      "skuName": "Campeche"
+    },
+    {
+      "synonym": "coah",
+      "skuName": "Coahuila"
+    },
+    {
+      "synonym": "col",
+      "skuName": "Colima"
+    },
+    {
+      "synonym": "chis",
+      "skuName": "Chiapas"
+    },
+    {
+      "synonym": "chih",
+      "skuName": "Chihuahua"
+    },
+    {
+      "synonym": "df",
+      "skuName": "Distrito Federal"
+    },
+    {
+      "synonym": "cdmx",
+      "skuName": "Ciudad de México"
+    },
+    {
+      "synonym": "dgo",
+      "skuName": "Durango"
+    },
+    {
+      "synonym": "gto",
+      "skuName": "Guanajuato"
+    },
+    {
+      "synonym": "gro",
+      "skuName": "Guerrero"
+    },
+    {
+      "synonym": "hgo",
+      "skuName": "Hidalgo"
+    },
+    {
+      "synonym": "jal",
+      "skuName": "Jalisco"
+    },
+    {
+      "synonym": "mich",
+      "skuName": "Michoacán"
+    },
+    {
+      "synonym": "mor",
+      "skuName": "Morelos"
+    },
+    {
+      "synonym": "nay",
+      "skuName": "Nayarit"
+    },
+    {
+      "synonym": "nl",
+      "skuName": "Nuevo León"
+    },
+    {
+      "synonym": "oax",
+      "skuName": "Oaxaca"
+    },
+    {
+      "synonym": "pue",
+      "skuName": "Puebla"
+    },
+    {
+      "synonym": "qro",
+      "skuName": "Querétaro"
+    },
+    {
+      "synonym": "qr",
+      "skuName": "Quintana Roo"
+    },
+    {
+      "synonym": "slp",
+      "skuName": "San Luis Potosí"
+    },
+    {
+      "synonym": "sin",
+      "skuName": "Sinaloa"
+    },
+    {
+      "synonym": "son",
+      "skuName": "Sonora"
+    },
+    {
+      "synonym": "tab",
+      "skuName": "Tabasco"
+    },
+    {
+      "synonym": "tams",
+      "skuName": "Tamaulipas"
+    },
+    {
+      "synonym": "tlax",
+      "skuName": "Tlaxcala"
+    },
+    {
+      "synonym": "ver",
+      "skuName": "Veracruz"
+    },
+    {
+      "synonym": "yuc",
+      "skuName": "Yucatán"
+    },
+    {
+      "synonym": "zac",
+      "skuName": "Zacatecas"
+    },
+    {
+      "synonym": "gdl",
+      "skuName": "Guadalajara"
+    },
+    {
+      "synonym": "recargar",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "recargamovil",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "recargas",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "recargaunefon",
+      "skuName": "recarga unefon"
+    },
+    {
+      "synonym": "tae",
+      "skuName": "recarga telcel"
+    },
+    {
+      "synonym": "saldo",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "recagas",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "planes",
+      "skuName": "plan"
+    },
+    {
+      "synonym": "recargatae",
+      "skuName": "recarga telcel"
+    },
+    {
+      "synonym": "recarga amigo",
+      "skuName": "recarga telcel"
+    },
+    {
+      "synonym": "amigo",
+      "skuName": "telcel"
+    },
+    {
+      "synonym": "tiempo",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "recibos",
+      "skuName": "servicios"
+    },
+    {
+      "synonym": "recibo",
+      "skuName": "servicios"
+    },
+    {
+      "synonym": "poner saldo",
+      "skuName": "recarga"
+    },
+    {
+      "synonym": "datos",
+      "skuName": "internet"
+    },
+    {
+      "synonym": "ado",
+      "skuName": ""
+    },
+    {
+      "synonym": "primera plus",
+      "skuName": ""
+    },
+    {
+      "synonym": "lineas de autobus",
+      "skuName": ""
+    },
+    {
+      "synonym": "Combo",
+      "skuName": "cine"
+    },
+    {
+      "synonym": "Pagar",
+      "skuName": ""
+    },
+    {
+      "synonym": "Cine",
+      "skuName": ""
+    },
+    {
+      "synonym": "Cinépolis",
+      "skuName": ""
+    },
+    {
+      "synonym": "peli",
+      "skuName": ""
+    },
+    {
+      "synonym": "pelis",
+      "skuName": ""
+    },
+    {
+      "synonym": "pelicula",
+      "skuName": ""
+    },
+    {
+      "synonym": "palomitas",
+      "skuName": ""
+    },
+    {
+      "synonym": "Cinemex",
+      "skuName": ""
+    },
+    {
+      "synonym": "estrenos",
+      "skuName": ""
+    },
+    {
+      "synonym": "boletos",
+      "skuName": ""
+    },
+    {
+      "synonym": "entradas",
+      "skuName": ""
+    },
+    {
+      "synonym": "taquilla",
+      "skuName": ""
+    },
+    {
+      "synonym": "refresco",
+      "skuName": ""
+    },
+    {
+      "synonym": "dulceria",
+      "skuName": ""
+    },
+    {
+      "synonym": "combos",
+      "skuName": ""
+    },
+    {
+      "synonym": "Smartwatch",
+      "skuName": ""
+    },
+    {
+      "synonym": "alexa",
+      "skuName": ""
+    },
+    {
+      "synonym": "samsung",
+      "skuName": ""
+    },
+    {
+      "synonym": "Tarjeta",
+      "skuName": ""
+    },
+    {
+      "synonym": "crédito",
+      "skuName": ""
+    },
+    {
+      "synonym": "pagar",
+      "skuName": ""
+    },
+    {
+      "synonym": "estado de cuenta",
+      "skuName": ""
+    },
+    {
+      "synonym": "Boletos de autobús",
+      "skuName": ""
+    },
+    {
+      "synonym": "autobús",
+      "skuName": ""
+    },
+    {
+      "synonym": "Plan",
+      "skuName": ""
+    },
+    {
+      "synonym": "postpago",
+      "skuName": ""
+    },
+    {
+      "synonym": "celular",
+      "skuName": ""
+    },
+    {
+      "synonym": "Tag",
+      "skuName": ""
+    },
+    {
+      "synonym": "pase",
+      "skuName": ""
+    },
+    {
+      "synonym": "tag",
+      "skuName": ""
+    },
+    {
+      "synonym": "supervia",
+      "skuName": ""
+    },
+    {
+      "synonym": "carretera",
+      "skuName": ""
+    },
+    {
+      "synonym": "autopista urbana",
+      "skuName": ""
+    },
+    {
+      "synonym": "Beneficios",
+      "skuName": ""
+    },
+    {
+      "synonym": "paquetes",
+      "skuName": ""
+    },
+    {
+      "synonym": "ilimitado",
+      "skuName": ""
+    },
+    {
+      "synonym": "Beneficios",
+      "skuName": ""
+    },
+    {
+      "synonym": "paquetes",
+      "skuName": ""
+    },
+    {
+      "synonym": "ilimitado",
+      "skuName": ""
+    },
+    {
+      "synonym": "Beneficios",
+      "skuName": ""
+    },
+    {
+      "synonym": "paquetes",
+      "skuName": ""
+    },
+    {
+      "synonym": "ilimitado",
+      "skuName": ""
+    },
+    {
+      "synonym": "tdc",
+      "skuName": ""
+    },
+    {
+      "synonym": "tarjeta de credito",
+      "skuName": ""
+    },
+    {
+      "synonym": "tarjeta de crédito",
+      "skuName": ""
+    },
+    {
+      "synonym": "crédito",
+      "skuName": ""
+    },
+    {
+      "synonym": "paquete",
+      "skuName": ""
+    },
+    {
+      "synonym": "internet",
+      "skuName": ""
+    },
+    {
+      "synonym": "Tarjeta",
+      "skuName": ""
+    },
+    {
+      "synonym": "telcel",
+      "skuName": ""
+    },
+    {
+      "synonym": "Maquillaje",
+      "skuName": ""
+    },
+    {
+      "synonym": "Skincare",
+      "skuName": ""
+    },
+    {
+      "synonym": "Medicamentos",
+      "skuName": ""
+    },
+    {
+      "synonym": "Cuidado Personal",
+      "skuName": ""
+    },
+    {
+      "synonym": "cinepolis",
+      "skuName": ""
+    },
+    {
+      "synonym": "vip",
+      "skuName": ""
+    },
+    {
+      "synonym": "cine",
+      "skuName": ""
+    },
+    {
+      "synonym": "cinemex",
+      "skuName": ""
+    },
+    {
+      "synonym": "platinum",
+      "skuName": ""
+    },
+    {
+      "synonym": "peliculas",
+      "skuName": ""
+    },
+    {
+      "synonym": "Cashback",
+      "skuName": ""
+    },
+    {
+      "synonym": "monedero",
+      "skuName": ""
+    },
+    {
+      "synonym": "Uber",
+      "skuName": ""
+    },
+    {
+      "synonym": "cfe",
+      "skuName": ""
+    },
+    {
+      "synonym": "autobus",
+      "skuName": ""
+    },
+    {
+      "synonym": "ado",
+      "skuName": ""
+    },
+    {
+      "synonym": "boletos autobus",
+      "skuName": ""
+    },
+    {
+      "synonym": "boletos viaje",
+      "skuName": ""
+    },
+    {
+      "synonym": "autobus",
+      "skuName": ""
+    },
+    {
+      "synonym": "viaje",
+      "skuName": ""
+    },
+    {
+      "synonym": "recarga",
+      "skuName": ""
+    },
+    {
+      "synonym": "telefono",
+      "skuName": ""
+    },
+    {
+      "synonym": "saldo",
+      "skuName": ""
+    },
+    {
+      "synonym": "cine",
+      "skuName": ""
+    },
+    {
+      "synonym": "pelicula",
+      "skuName": ""
+    },
+    {
+      "synonym": "starbucks",
+      "skuName": ""
+    },
+    {
+      "synonym": "cafe",
+      "skuName": ""
+    },
+    {
+      "synonym": "estacionamiento",
+      "skuName": ""
+    },
+    {
+      "synonym": "parquimetro",
+      "skuName": ""
+    },
+    {
+      "synonym": "celular",
+      "skuName": ""
+    },
+    {
+      "synonym": "cashback",
+      "skuName": ""
+    },
+    {
+      "synonym": "recompensa",
+      "skuName": ""
+    },
+    {
+      "synonym": "tarjeta",
+      "skuName": ""
+    },
+    {
+      "synonym": "gas",
+      "skuName": ""
+    },
+    {
+      "synonym": "total",
+      "skuName": ""
+    },
+    {
+      "synonym": "totalplay",
+      "skuName": ""
+    },
+    {
+      "synonym": "Telefonos",
+      "skuName": ""
+    },
+    {
+      "synonym": "Recargas",
+      "skuName": ""
+    },
+    {
+      "synonym": "Xbox",
+      "skuName": ""
+    },
+    {
+      "synonym": "Nintendo",
+      "skuName": ""
+    },
+    {
+      "synonym": "Play Station",
+      "skuName": ""
+    },
+    {
+      "synonym": "Barato",
+      "skuName": ""
+    },
+    {
+      "synonym": "Compartir",
+      "skuName": ""
+    },
+    {
+      "synonym": "Sacmex",
+      "skuName": ""
+    },
+    {
+      "synonym": "sacmex",
+      "skuName": ""
+    },
+    {
+      "synonym": "telcel",
+      "skuName": ""
+    },
+    {
+      "synonym": "movistar",
+      "skuName": ""
+    },
+    {
+      "synonym": "unefon",
+      "skuName": ""
+    },
+    {
+      "synonym": "boletos",
+      "skuName": ""
+    },
+    {
+      "synonym": "comnos",
+      "skuName": ""
+    },
+    {
+      "synonym": "palomitas",
+      "skuName": ""
+    },
+    {
+      "synonym": "combos",
+      "skuName": ""
+    },
+    {
+      "synonym": "refresco",
+      "skuName": ""
+    },
+    {
+      "synonym": "pase",
+      "skuName": ""
+    },
+    {
+      "synonym": "tag",
+      "skuName": ""
+    },
+    {
+      "synonym": "uber",
+      "skuName": ""
+    },
+    {
+      "synonym": "econduce",
+      "skuName": ""
+    },
+    {
+      "synonym": "ecobici",
+      "skuName": ""
+    },
+    {
+      "synonym": "Peaje",
+      "skuName": ""
+    },
+    {
+      "synonym": "Xbox",
+      "skuName": ""
+    },
+    {
+      "synonym": "play station",
+      "skuName": ""
+    },
+    {
+      "synonym": "Netflix",
+      "skuName": ""
+    },
+    {
+      "synonym": "Agua",
+      "skuName": ""
+    }
+  ]
