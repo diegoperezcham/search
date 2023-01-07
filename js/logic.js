@@ -40,13 +40,13 @@ function levenshtein(a, b) {
       displayResults([]);
       return;
     }
-    fetch('data.json')
+    fetch('js/data.json')
       .then(function(response) {
         return response.json();
       })
       .then(function(json) {
 
-        fetch('synonyms.json')
+        fetch('js/synonyms.json')
         .then(function(response) {
         return response.json();
       })
