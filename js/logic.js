@@ -54,7 +54,7 @@ function levenshtein(a, b) {
         let results = findSimilarProducts(json, query, synonyms);
         
         // Display the search results
-        displayResults(results);
+        displayResults(removeDuplicates(results));
       });
         /*let results = findSimilarProducts(json, query);
 
@@ -63,7 +63,7 @@ function levenshtein(a, b) {
       });
   }
   
-  function displayResults(results, query) {
+  /*function displayResults(results, query) {
     // Clear the previous search results
     $('#search-results').empty();
   
@@ -76,24 +76,134 @@ function levenshtein(a, b) {
     });
   }
   
+  function displayResults(products) {
+    // Get the element to display the results
+    const resultsElement = document.getElementById('#search-results');
+  
+    // Clear the results element
+    //resultsElement.innerHTML = '';
+    $('#search-results').empty();
+
+    // Iterate through the products
+    for (const product of products) {
+      // Create a list item for the product
+      const productElement = document.createElement('div');
+  
+      // Set the onclick attribute to open the URL
+      productElement.onclick = () => {
+        window.open(`https://undostres.com.mx/?product_type=${product.cat2}`, '_blank');
+      };
+  
+      // Set the content of the list item
+      productElement.innerHTML = `${product.cat2} - ${product.cat4Lower}`;
+  
+      // Add the list item to the results element
+      //resultsElement.appendChild(productElement);
+      productElement.className = 'result';
+      $('#search-results').append(productElement);
+    }
+  }*/
+
+  function displayResults(products) {
+    // Get the element to display the results
+    const resultsElement = document.getElementById('search-results');
+  
+    // Clear the results element
+    $('#search-results').empty();
+  
+    // Initialize a variable to store the current category
+    let currentCategory = '';
+  
+    // Iterate through the products
+    for (const product of products) {
+      // Check if the category has changed
+      if (product.cat2 !== currentCategory) {
+        // If the category has changed, update the current category and insert a new element with the cat2 property
+        currentCategory = product.cat2;
+        const cat2Element = document.createElement('h2');
+        cat2Element.innerHTML = currentCategory;
+        resultsElement.appendChild(cat2Element);
+      }
+  
+      // Create a list item for the product
+      const productElement = document.createElement('div');
+  
+      // Set the onclick attribute to open the URL
+      productElement.onclick = () => {
+        window.open(`https://undostres.com.mx/?product_type=${product.cat2}`, '_blank');
+      };
+  
+      // Create an element for the cat4Lower property
+      const cat4LowerElement = document.createElement('div');
+      cat4LowerElement.innerHTML = product.cat4Lower;
+  
+      // Append the elements to the list item
+      productElement.appendChild(cat4LowerElement);
+  
+      // Add the list item to the results element
+      productElement.className = 'result';
+      $('#search-results').append(productElement);
+    }
+  }
+  
   function trigger() {
     var searchQuery = $('#search-input').val();
     search(searchQuery)
   }
 
+  function removeDuplicates(products) {
+    // Create a Set to store the unique sku_id values
+    const uniqueIds = new Set();
+  
+    // Create a new array to store the unique products
+    const uniqueProducts = [];
+  
+    // Iterate through the products
+    for (const product of products) {
+      // If the sku_id is not in the Set, add it and add the product to the unique products array
+      if (!uniqueIds.has(product.cat4Lower)) {
+        uniqueIds.add(product.cat4Lower);
+        uniqueProducts.push(product);
+      }
+    }
+  
+    return uniqueProducts;
+  }
+
+  function filterShortWords(words) {
+    // Use the Array.filter() method to create a new array with only the words that have a length greater than or equal to 2
+    const filteredWords = words.filter(word => word.length >= 2);
+  
+    return filteredWords;
+  }
+
+  function replaceSpecialCharacters(words) {
+    // Use the Array.map() method to create a new array with the modified words
+    const modifiedWords = words.map(word => {
+      // Use a regular expression to replace special characters with their plain counterparts
+      return word.replace(/[^\w\s]/gi, '');
+    });
+  
+    return modifiedWords;
+  }
+
   function findSimilarProducts(jsonArray, query, synonyms) {
+    //query = query.replace("san luis potosi", "san-luis-potosi")
     // Split the query into an array of individual words
+    //console.log(query);
     let queryWords = query.trim().split(' ');
+    //queryWords = replaceSpecialCharacters(queryWords);
             for (let queryWord of queryWords) {
                 for (const synonym of synonyms) {
                     // If the current synonym matches the word, add it to the matched synonyms string
-                    if (levenshtein(synonym.synonym.toLowerCase(), queryWord.toLowerCase()) <= 2) {
+                    if (levenshtein(synonym.synonym.toLowerCase().replace(/[^\w\s]/gi, ''), queryWord.toLowerCase().replace(/[^\w\s]/gi, '')) <= 1) {
                         query = synonym.skuName + ' ' + query;
                     }
                 }
             }
             queryWords = query.trim().split(' ');
-    //console.log(queryWords);
+            queryWords = filterShortWords(queryWords);
+    console.log(queryWords);
 
     // Create an empty list to store the matching products
     const matchingProducts = [];
@@ -134,16 +244,21 @@ function levenshtein(a, b) {
 
                     // Set the flag to indicate that a match was found
                     foundMatch = true;
+                    product.totalDistance = totalDistance;
+                    if(product.cat2 === ""){
+                      product.cat2="Sin categoría"
+                    }
                     //console.log(dist + ' ' + queryWord + ' ' + cat4LowerWord + ' ' + foundMatch);
                     matchingProducts.push(product);
-                    break;
+                    //break;
+                    
                 }
             }
 
             // If no match was found for the current query word, set the flag to indicate that the product is not a match
             if (!foundMatch) {
                 isMatch = false;
-                break;
+                //break;
             }
         }
 
@@ -152,6 +267,9 @@ function levenshtein(a, b) {
           //alert(product);
             // Add the total distance as a property of the product object
             product.totalDistance = totalDistance;
+            if(product.cat2 === ""){
+              product.cat2="Sin categoría"
+            }
             matchingProducts.push(product);
             //console.log(product);
         }
@@ -159,6 +277,12 @@ function levenshtein(a, b) {
 
     // Sort the matching products by their total distance from the query
     matchingProducts.sort((a, b) => a.totalDistance - b.totalDistance);
+
+    // sort priority product
+    matchingProducts.sort((a, b) => parseInt(a.priority_product) - parseInt(b.priority_product));
+
+    // sort priority category
+    matchingProducts.sort((a, b) => parseInt(a.priority_category) - parseInt(b.priority_category));
 
     return matchingProducts;
 }
