@@ -237,7 +237,7 @@ function levenshtein(a, b) {
                 //if(queryWordClean === 'wallet' && cat4LowerWordClean === 'wallet') alert(dist);
 
                 // If the distance is less than or equal to 2 (arbitrary threshold), consider the words a match
-                if (dist <= 2) {
+                if (dist <= 4) {
                   
                     // Add the distance to the total distance
                     totalDistance = Math.min(dist, totalDistance);
