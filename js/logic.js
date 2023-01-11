@@ -32,7 +32,9 @@ function levenshtein(a, b) {
     }
   
     // Return the distance between the two strings
-    return distances[a.length][b.length];
+    let x = 0;
+    if (b.substr(0, a.length)===a)x=-4
+    return distances[a.length][b.length]+x;
   }
 
   function search(query) {
@@ -115,7 +117,12 @@ function levenshtein(a, b) {
     let currentCategory = '';
   
     // Iterate through the products
+    let i = 0;
     for (const product of products) {
+      //print 5 products
+      //if (i > 5) 
+      //break;
+
       // Check if the category has changed
       if (product.cat2 !== currentCategory) {
         // If the category has changed, update the current category and insert a new element with the cat2 property
@@ -123,7 +130,10 @@ function levenshtein(a, b) {
         const cat2Element = document.createElement('h2');
         cat2Element.innerHTML = currentCategory;
         resultsElement.appendChild(cat2Element);
+        i=0
       }
+      //sum +1
+      //i++
   
       // Create a list item for the product
       const productElement = document.createElement('div');
@@ -142,7 +152,12 @@ function levenshtein(a, b) {
   
       // Add the list item to the results element
       productElement.className = 'result';
-      $('#search-results').append(productElement);
+      //$('#search-results').append(productElement);
+      if (i < 5){
+        $('#search-results').append(productElement);
+      }
+      
+      i++
     }
   }
   
