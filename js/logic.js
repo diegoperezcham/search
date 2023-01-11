@@ -132,7 +132,7 @@ function levenshtein(a, b) {
         resultsElement.appendChild(cat2Element);
         i=0
       }
-      //sum +1
+      //sum +1 5 products
       //i++
   
       // Create a list item for the product
@@ -153,10 +153,11 @@ function levenshtein(a, b) {
       // Add the list item to the results element
       productElement.className = 'result';
       //$('#search-results').append(productElement);
+      // print 5 per category
       if (i < 5){
         $('#search-results').append(productElement);
       }
-      
+      // sum +1 5 per category
       i++
     }
   }
@@ -251,7 +252,7 @@ function levenshtein(a, b) {
                 const dist = levenshtein(queryWordClean, cat4LowerWordClean);
                 //if(queryWordClean === 'wallet' && cat4LowerWordClean === 'wallet') alert(dist);
 
-                // If the distance is less than or equal to 2 (arbitrary threshold), consider the words a match
+                // If the distance is less than or equal to 4 (arbitrary threshold), consider the words a match
                 if (dist <= 4) {
                   
                     // Add the distance to the total distance
